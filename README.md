@@ -1,1 +1,3 @@
 # RawSocketStuff
+
+1.HackedTogeth: Please don't judge too harshly, it was a small hacked together raw socket get thing a long time ago, in a galaxy far far away...
