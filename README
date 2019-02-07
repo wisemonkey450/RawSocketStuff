@@ -1,0 +1,24 @@
+OVERALL
+
+Overall, this project was by far the most challenging project I've ever had to implement and complete. However, even though I may not earn the highest grade for this assignemnt, I absolutely LOVED it. I have never learned so much from a programming assignment. I learned how
+both TCP/IP are internally implemented even within the linux kernel. Even though I did not complete the extra credit I still learned a lot about ARP and how I can use an ARP cache for future processes. I will most certainly be able to include this knowledge in my future work in cybersecurity. I even got a chance to learn about packet filters and how tcpdump is actually implemented! EXTREMELY COOL STUFF!!
+
+
+CHALLENGES
+
+There were many challenges with this assignment. 
+
+**First, was the internet checksum and computing the psuedo-TCP header. I used wireshark to debug this and find my problem. 
+
+**Second, were the TCP seq/ack numbers. After about 20 hours of programming, I finally found that it boiled down to 2 concepts
+	->Only change SEQ when sending data
+	->Only change ACK when recieving data
+	---Of course, this excludes the connection setup and tear down.
+
+**Third, I did this in C. People call me crazy for doing this, but I do not regret the decision one bit. I challenged myself and even though I may not get 100% or as high of a grade as anyone else in the course, I believe that I have learned quite a lot from this assignment. The challenges mainly came from all the segmentation faults and trouble with sockets that I had. Then again, I now know a lot more about how sockets truly work. 
+
+**Fourth, complexity. The project was EXTENSIVE. Lots of moving parts. Things to keep track of. I mostly used structs as defined in struct_def.h. The comparator struct proved most usful in all situations. Especially SEQ/ACK numbers.
+
+FUTURE WORK
+
+I am planning on taking this to the next level and completing layer 2 and adding, ICMP, IGMP, UDP, NTP, etc. into this. I truly and firmly believe the only way to learn network protocols is to implement them in C. It's tough, but so worth the end. I also plan on changing the TCP algorithm. I want to implement one of the variants and use that. I also plan to use AF_PACKET sockets to write programs that can find routers, access points, and possibily even detect intruders on networks. Thank you very much for having this project!! I really did enjoy it!
