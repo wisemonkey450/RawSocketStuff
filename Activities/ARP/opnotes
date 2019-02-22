@@ -1,0 +1,19 @@
+1. echo 1 > /proc/sys/net/ipv4/conf/all/arp_accept 
+
+2. Starting scapy as root.
+
+3. Created an ether packet:
+a=Ether()
+a.show() *this will show you what the variable now has for defaults*
+a.src= "Your MAC Address"
+a.dst= "ARP requests are broadcast"
+a.type= The hex code for ARP
+
+4. Create an ARP packet:
+b=ARP()
+b.op= opcode for requests
+b.hwsrc= "Your MAC"
+b.psrc= "Your IP"
+b.pdst= "Target IP"
+
+5. Starting TCPDUMP....
